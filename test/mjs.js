@@ -1,5 +1,5 @@
-import { test, test2 } from "../dist/es/main.mjs"
-import { hello } from "../dist/es/util.mjs"
+import { test, test2 } from "../dist/es/main.js"
+import { hello } from "../dist/es/util.js"
 
 test()  // hello 111 ===>
 test2() // hello 222 ===>

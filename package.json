@@ -1,8 +1,8 @@
 {
   "name": "rollup-tag-test",
   "version": "1.0.0",
-  "main": "./dist/cjs/main.cjs",
-  "module": "dist/es/main.mjs",
+  "module": "dist/es/main.js",
+  "main": "dist/cjs/main.cjs",
   "type": "module",
   "description": "利用 Rollup 实现一个可以同时使用ES Module 和 CommonJS 导入的工具包",
   "files": [
@@ -10,17 +10,17 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/es/main.mjs",
+      "import": "./dist/es/main.js",
       "require": "./dist/cjs/main.cjs"
     },
     "./util": {
-      "import": "./dist/es/util.mjs",
+      "import": "./dist/es/util.js",
       "require": "./dist/cjs/util.cjs"
     }
   },
   "scripts": {
-    "test-cjs": "node ./test/cjs.cjs",
     "test-es": "node ./test/mjs.js",
+    "test-cjs": "node ./test/cjs.cjs",
     "build": "rollup -c"
   },
   "keywords": [],

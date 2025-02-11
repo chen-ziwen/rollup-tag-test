@@ -12,7 +12,7 @@ export default {
         {
             dir: 'dist/es',
             format: 'es',
-            entryFileNames: '[name].mjs',
+            entryFileNames: '[name].js',
 
         },
         {
@@ -31,7 +31,7 @@ export default {
     ],
 };
 
-// 多种写法 但是一旦input设置成对象形式 output 中的file就必须改为dir
+// 多种写法 但是一旦 input 设置成对象形式 output 中的file就必须改为dir
 // export default [
 //     {
 //         input: 'main-a.js',
