@@ -15,7 +15,7 @@ test2(); // 222 ===>
 hello(); // a ===> { name: 'chiko', age: 12 } chiko 12
 ```
 
-设置 type 为 module时，使用 import 导入函数并成功调用。
+设置 type 为 module 时，使用 import 导入函数并成功调用。
 
 ```js
 // 测试 es module
