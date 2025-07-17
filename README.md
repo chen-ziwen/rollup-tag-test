@@ -1,12 +1,12 @@
-# 利用 rollup 自动编译 ES Module 和 CommonJS 两种包导入方式
+# 利用 RollUp 编译出同时支持 ES Module 和 CommonJS 的包
 
 ## 测试案例
-通过 npm 下载该包：
+通过 `npm` 下载该包：
 
-不设置 type 时，使用 require 导入函数并成功调用。
+不设置 `type` 时，使用 `require` 导入函数并成功调用。
 
 ```js
-// 测试 commonjs 
+// 测试 CommonJS
 const { test, test2 } = require("rollup-tag-test");
 const { hello } = require("rollup-tag-test/util");
 
@@ -15,10 +15,10 @@ test2(); // 222 ===>
 hello(); // a ===> { name: 'chiko', age: 12 } chiko 12
 ```
 
-设置 type 为 module 时，使用 import 导入函数并成功调用。
+设置 `type` 为 `module` 时，使用 `import` 导入函数并成功调用。
 
 ```js
-// 测试 es module
+// 测试 ES Module
 import { test, test2 } from "rollup-tag-test";
 import { hello } from "rollup-tag-test/util";
 
