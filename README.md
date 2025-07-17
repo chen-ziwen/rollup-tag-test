@@ -3,7 +3,9 @@
 ## 测试案例
 通过 `npm` 下载该包：
 
-不设置 `type` 时，使用 `require` 导入函数并成功调用。
+- 不设置 `type` 时，默认使用 `commonjs` 。
+  - ✔ **require**
+  - ❌ **import**
 
 ```js
 // 测试 CommonJS
@@ -15,7 +17,9 @@ test2(); // 222 ===>
 hello(); // a ===> { name: 'chiko', age: 12 } chiko 12
 ```
 
-设置 `type` 为 `module` 时，使用 `import` 导入函数并成功调用。
+- 设置 `type` 为 `module` 时，则使用 `es module`。
+  - ✔ **import**
+  - ❌ **require**
 
 ```js
 // 测试 ES Module
